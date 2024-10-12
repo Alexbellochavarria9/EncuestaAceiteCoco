@@ -1,0 +1,138 @@
+index.html
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encuesta Aceite de Coco - Belleza y Cuidado Personal</title>
+</head>
+<body>
+    <h2>Encuesta: Aceite de Coco en Belleza y Cuidado Personal</h2>
+    <p>Buenas tardes, somos estudiantes de la Universidad Multidisciplinaria Ricardo Morales Avilés, actualmente estamos cursando el cuarto año de la carrera de Administración Turística y Hotelera, y necesitamos que nos regale unos minutos de su tiempo para llenar la siguiente encuesta, esto debido a que estamos realizando un estudio de mercado acerca del aceite de coco en el uso de belleza y cuidado personal.</p>
+
+    <form>
+        <label for="sexo">1. Sexo:</label><br>
+        <input type="radio" id="femenino" name="sexo" value="F">
+        <label for="femenino">F</label><br>
+        <input type="radio" id="masculino" name="sexo" value="M">
+        <label for="masculino">M</label><br><br>
+
+        <label for="edad">2. Rango de edad:</label><br>
+        <select id="edad" name="edad">
+            <option value="15-25">15-25</option>
+            <option value="26-35">26-35</option>
+            <option value="36-45">36-45</option>
+            <option value="46-55">46-55</option>
+        </select><br><br>
+
+        <label>3. ¿Es habitante del municipio de Rivas?</label><br>
+        <input type="radio" id="rivas-si" name="rivas" value="Sí">
+        <label for="rivas-si">Sí</label><br>
+        <input type="radio" id="rivas-no" name="rivas" value="No">
+        <label for="rivas-no">No</label><br><br>
+
+        <label>4. ¿Ha adquirido algún producto natural a base de coco para cuidado personal?</label><br>
+        <input type="radio" id="producto-si" name="producto" value="Sí">
+        <label for="producto-si">Sí</label><br>
+        <input type="radio" id="producto-no" name="producto" value="No">
+        <label for="producto-no">No</label><br>
+        <input type="radio" id="producto-una-vez" name="producto" value="Una vez">
+        <label for="producto-una-vez">Una vez</label><br>
+        <input type="radio" id="producto-nunca" name="producto" value="Nunca">
+        <label for="producto-nunca">Nunca</label><br><br>
+
+        <label for="experiencia">5. Si su respuesta es Sí/Una vez, regálenos su experiencia. Si su respuesta es No/Nunca, indique el por qué:</label><br>
+        <textarea id="experiencia" name="experiencia" rows="4" cols="50"></textarea><br><br>
+
+        <label>6. ¿Para qué utilizas principalmente el aceite de coco? (Selecciona todas las opciones que apliquen)</label><br>
+        <input type="checkbox" id="piel" name="uso" value="Hidratar la piel">
+        <label for="piel">Hidratar la piel</label><br>
+        <input type="checkbox" id="maquillaje" name="uso" value="Remover maquillaje">
+        <label for="maquillaje">Remover maquillaje</label><br>
+        <input type="checkbox" id="cabello" name="uso" value="Acondicionar el cabello">
+        <label for="cabello">Acondicionar el cabello</label><br>
+        <input type="checkbox" id="otros" name="uso" value="Otros">
+        <label for="otros">Otros (especifica):</label><br>
+        <input type="text" id="otros-texto" name="otros-texto"><br><br>
+
+        <label>7. ¿Con qué frecuencia utilizas aceite de coco en tu rutina de belleza y cuidado personal?</label><br>
+        <input type="radio" id="frecuencia-nunca" name="frecuencia" value="Nunca">
+        <label for="frecuencia-nunca">Nunca</label><br>
+        <input type="radio" id="frecuencia-ocasionalmente" name="frecuencia" value="Ocasionalmente">
+        <label for="frecuencia-ocasionalmente">Ocasionalmente</label><br>
+        <input type="radio" id="frecuencia-1-2" name="frecuencia" value="1-2 veces por semana">
+        <label for="frecuencia-1-2">1-2 veces por semana</label><br>
+        <input type="radio" id="frecuencia-diariamente" name="frecuencia" value="Diariamente">
+        <label for="frecuencia-diariamente">Diariamente</label><br><br>
+
+        <label>8. ¿Qué tipo de aceite de coco utilizas?</label><br>
+        <input type="radio" id="virgen" name="tipo" value="Virgen extra">
+        <label for="virgen">Virgen extra</label><br>
+        <input type="radio" id="refinado" name="tipo" value="Refinado">
+        <label for="refinado">Refinado</label><br>
+        <input type="radio" id="mezcla" name="tipo" value="Mezcla">
+        <label for="mezcla">Mezcla</label><br><br>
+
+        <label>9. ¿Dónde adquieres el aceite de coco?</label><br>
+        <input type="radio" id="tiendas" name="adquisicion" value="Tiendas naturistas">
+        <label for="tiendas">Tiendas naturistas</label><br>
+        <input type="radio" id="supermercados" name="adquisicion" value="Supermercados">
+        <label for="supermercados">Supermercados</label><br>
+        <input type="radio" id="internet" name="adquisicion" value="Internet">
+        <label for="internet">Internet</label><br>
+        <input type="radio" id="otros-adquisicion" name="adquisicion" value="Otros">
+        <label for="otros-adquisicion">Otros</label><br><br>
+
+        <label>10. ¿Cuál es el factor más importante al elegir un aceite de coco?</label><br>
+        <input type="radio" id="pureza" name="factor" value="Pureza">
+        <label for="pureza">Pureza</label><br>
+        <input type="radio" id="precio" name="factor" value="Precio">
+        <label for="precio">Precio</label><br>
+        <input type="radio" id="marca" name="factor" value="Marca">
+        <label for="marca">Marca</label><br>
+        <input type="radio" id="aroma" name="factor" value="Aroma">
+        <label for="aroma">Aroma</label><br>
+        <input type="radio" id="otros-factores" name="factor" value="Otros">
+        <label for="otros-factores">Otros</label><br><br>
+
+        <label>11. ¿Has notado algún beneficio en tu piel o cabello desde que utilizas aceite de coco?</label><br>
+        <input type="radio" id="beneficio-piel" name="beneficio" value="Sí, mi piel está más suave">
+        <label for="beneficio-piel">Sí, mi piel está más suave</label><br>
+        <input type="radio" id="beneficio-cabello" name="beneficio" value="Sí, mi cabello tiene más brillo">
+        <label for="beneficio-cabello">Sí, mi cabello tiene más brillo</label><br>
+        <input type="radio" id="beneficio-ninguno" name="beneficio" value="No, ningún cambio">
+        <label for="beneficio-ninguno">No, ningún cambio</label><br><br>
+
+        <label for="interes">12. ¿Qué te gustaría saber más sobre el aceite de coco para la belleza y el cuidado personal?</label><br>
+        <textarea id="interes" name="interes" rows="4" cols="50"></textarea><br><br>
+
+        <label>13. ¿Estaría dispuesto a comprar nuestro producto?</label><br>
+        <input type="radio" id="comprar-si" name="comprar" value="Sí">
+        <label for="comprar-si">Sí</label><br>
+        <input type="radio" id="comprar-no" name="comprar" value="No">
+        <label for="comprar-no">No</label><br>
+        <input type="radio" id="comprar-talvez" name="comprar" value="Tal vez">
+        <label for="comprar-talvez">Tal vez</label><br><br>
+
+        <label>14. ¿Cuánto estaría dispuesto a pagar por nuestro producto?</label><br>
+        <input type="radio" id="precio-70" name="precio" value="70">
+        <label for="precio-70">70</label><br>
+        <input type="radio" id="precio-80" name="precio" value="80">
+        <label for="precio-80">80</label><br>
+        <input type="radio" id="precio-90" name="precio" value="90">
+        <label for="precio-90">90</label><br>
+        <input type="radio" id="precio-100" name="precio" value="100">
+        <label for="precio-100">100</label><br><br>
+
+        <label>15. ¿En qué tipo de envase te gustaría adquirir nuestro producto?</label><br>
+        <input type="radio" id="envase-pequeño" name="envase" value="Pequeño">
+        <label for="envase-pequeño">Pequeño</label><br>
+        <input type="radio" id="envase-mediano" name="envase" value="Mediano">
+        <label for="envase-mediano">Mediano</label><br>
+        <input type="radio" id="envase-grande" name="envase" value="Grande">
+        <label for="envase-grande">Grande</label><br><br>
+
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+</html>
